@@ -1,6 +1,5 @@
 import axios from "axios";
-const apiURL = https://bee-development.onrender.com;
-
+const apiURL = "https://bee-development.onrender.com"; 
 const BearerToken = () =>
   localStorage.getItem("jwt")
     ? JSON.parse(localStorage.getItem("jwt")).token
