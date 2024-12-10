@@ -3,7 +3,7 @@ import moment from "moment";
 import { fetchOrderByUser } from "./Action";
 import Layout, { DashboardUserContext } from "./Layout";
 
-const apiURL = process.env.REACT_APP_API_URL;
+const apiURL = "https://bee-development-production.up.railway.app";
 
 const TableHeader = () => {
   return (
