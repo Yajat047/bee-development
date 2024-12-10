@@ -1,5 +1,5 @@
 import axios from "axios";
-const apiURL = "https://bee-development-production.up.railway.app";
+const apiURL = "bee-development-production.up.railway.app";
 
 export const DashboardData = async () => {
   try {
