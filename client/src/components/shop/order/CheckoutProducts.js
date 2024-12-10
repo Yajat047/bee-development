@@ -9,7 +9,7 @@ import { fetchData, fetchbrainTree, pay } from "./Action";
 
 import DropIn from "braintree-web-drop-in-react";
 
-const apiURL = "bee-development-production.up.railway.app";
+const apiURL = "https://bee-development-production.up.railway.app";
 
 export const CheckoutComponent = (props) => {
   const history = useHistory();

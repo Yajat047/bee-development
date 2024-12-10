@@ -3,7 +3,7 @@ import { useHistory, useParams } from "react-router-dom";
 import Layout from "../layout";
 import { productByCategory } from "../../admin/products/FetchApi";
 
-const apiURL = "bee-development-production.up.railway.app";
+const apiURL = "https://bee-development-production.up.railway.app";
 
 const Submenu = ({ category }) => {
   const history = useHistory();

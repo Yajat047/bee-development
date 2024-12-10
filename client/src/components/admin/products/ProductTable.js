@@ -3,7 +3,7 @@ import { getAllProduct, deleteProduct } from "./FetchApi";
 import moment from "moment";
 import { ProductContext } from "./index";
 
-const apiURL = "bee-development-production.up.railway.app";
+const apiURL = "https://bee-development-production.up.railway.app";
 
 const AllProduct = (props) => {
   const { data, dispatch } = useContext(ProductContext);

@@ -6,7 +6,7 @@ import { isAuthenticate } from "../auth/fetchApi";
 import { cartList } from "../productDetails/Mixins";
 import { subTotal, quantity, totalCost } from "./Mixins";
 
-const apiURL = "bee-development-production.up.railway.app";
+const apiURL = "https://bee-development-production.up.railway.app";
 
 const CartModal = () => {
   const history = useHistory();

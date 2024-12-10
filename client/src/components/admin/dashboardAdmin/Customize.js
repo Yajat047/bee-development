@@ -2,7 +2,7 @@ import React, { Fragment, useContext, useEffect } from "react";
 import { DashboardContext } from "./";
 import { uploadImage, sliderImages, deleteImage } from "./Action";
 
-const apiURL = "bee-development-production.up.railway.app";
+const apiURL = "https://bee-development-production.up.railway.app";
 
 const Customize = () => {
   const { data, dispatch } = useContext(DashboardContext);

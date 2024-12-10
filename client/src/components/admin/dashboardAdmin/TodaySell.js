@@ -4,7 +4,7 @@ import moment from "moment";
 import { DashboardContext } from "./";
 import { todayAllOrders } from "./Action";
 
-const apiURL = "bee-development-production.up.railway.app";
+const apiURL = "https://bee-development-production.up.railway.app";
 
 const SellTable = () => {
   const history = useHistory();

@@ -3,7 +3,7 @@ import { getAllCategory, deleteCategory } from "./FetchApi";
 import { CategoryContext } from "./index";
 import moment from "moment";
 
-const apiURL = "bee-development-production.up.railway.app";
+const apiURL = "https://bee-development-production.up.railway.app";
 
 const AllCategory = (props) => {
   const { data, dispatch } = useContext(CategoryContext);
