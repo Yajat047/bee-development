@@ -11,7 +11,8 @@
     "type": "git"
   },
   "license": "ISC",
-  "bugs": {},
+  "bugs": {
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "braintree": "^3.0.0",
