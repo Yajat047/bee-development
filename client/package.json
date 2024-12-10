@@ -9,6 +9,7 @@
     "axios": "^0.20.0",
     "bootstrap": "^4.5.2",
     "braintree-web-drop-in-react": "^1.2.1",
+    "cors": "^2.8.5",
     "moment": "^2.29.0",
     "notistack": "^3.0.1",
     "react": "^16.13.1",
@@ -22,7 +23,6 @@
     "test": "react-scripts --openssl-legacy-provider test",
     "eject": "react-scripts eject"
   },
-  
   "eslintConfig": {
     "extends": "react-app"
   },
