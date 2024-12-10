@@ -10,7 +10,7 @@ export const getAllProduct = async () => {
   }
 };
 
-export const createPorductImage = async ({ pImage }) => {
+export const createProductImage = async ({ pImage }) => {
   /* Most important part for uploading multiple image  */
   let formData = new FormData();
   for (const file of pImage) {
