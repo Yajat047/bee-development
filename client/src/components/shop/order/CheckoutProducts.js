@@ -9,7 +9,7 @@ import { fetchData, fetchbrainTree, pay } from "./Action";
 
 import DropIn from "braintree-web-drop-in-react";
 
-const apiURL = "https://bee-development-production.up.railway.app";
+const apiURL = process.env.REACT_APP_API_URL;
 
 export const CheckoutComponent = (props) => {
   const history = useHistory();
@@ -183,7 +183,7 @@ const CheckoutProducts = ({ products }) => {
                   <img
                     onClick={(e) => history.push(`/products/${product._id}`)}
                     className="cursor-pointer md:h-20 md:w-20 object-cover object-center"
-                    src={`uploads/products/${product.pImages[0]}`}
+                    src={`${apiURL}/uploads/products/${product.pImages[0]}`}
                     alt="wishListproduct"
                   />
                   <div className="text-lg md:ml-6 truncate">

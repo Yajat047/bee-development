@@ -1,5 +1,5 @@
 import axios from "axios";
-const apiURL = "https://bee-development-production.up.railway.app";
+const apiURL = process.env.REACT_APP_API_URL;
 
 export const getAllProduct = async () => {
   try {
@@ -10,7 +10,7 @@ export const getAllProduct = async () => {
   }
 };
 
-export const createProductImage = async ({ pImage }) => {
+export const createPorductImage = async ({ pImage }) => {
   /* Most important part for uploading multiple image  */
   let formData = new FormData();
   for (const file of pImage) {

@@ -5,7 +5,7 @@ import { getAllCategory } from "../../admin/categories/FetchApi";
 import { getAllProduct, productByPrice } from "../../admin/products/FetchApi";
 import "./style.css";
 
-const apiURL = "https://bee-development-production.up.railway.app";
+const apiURL = process.env.REACT_APP_API_URL;
 
 const CategoryList = () => {
   const history = useHistory();
@@ -42,7 +42,7 @@ const CategoryList = () => {
                   className="col-span-1 m-2 flex flex-col items-center justify-center space-y-2 cursor-pointer"
                 >
                   <img
-                    src={`uploads/categories/${item.cImage}`}
+                    src={`${apiURL}/uploads/categories/${item.cImage}`}
                     alt="pic"
                   />
                   <div className="font-medium">{item.cName}</div>

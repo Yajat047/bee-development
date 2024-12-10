@@ -12,7 +12,7 @@ import { isWishReq, unWishReq, isWish } from "../home/Mixins";
 import { updateQuantity, slideImage, addToCart, cartList } from "./Mixins";
 import { totalCost } from "../partials/Mixins";
 
-const apiURL = "https://bee-development-production.up.railway.app";
+const apiURL = process.env.REACT_APP_API_URL;
 
 const ProductDetailsSection = (props) => {
   let { id } = useParams();
@@ -113,7 +113,7 @@ const ProductDetailsSection = (props) => {
               className={`${
                 count === 0 ? "" : "opacity-25"
               } cursor-pointer w-20 h-20 object-cover object-center`}
-              src={`uploads/products/${sProduct.pImages[0]}`}
+              src={`${apiURL}/uploads/products/${sProduct.pImages[0]}`}
               alt="pic"
             />
             <img
@@ -123,7 +123,7 @@ const ProductDetailsSection = (props) => {
               className={`${
                 count === 1 ? "" : "opacity-25"
               } cursor-pointer w-20 h-20 object-cover object-center`}
-              src={`uploads/products/${sProduct.pImages[1]}`}
+              src={`${apiURL}/uploads/products/${sProduct.pImages[1]}`}
               alt="pic"
             />
           </div>
@@ -131,7 +131,7 @@ const ProductDetailsSection = (props) => {
             <div className="relative">
               <img
                 className="w-full"
-                src={`uploads/products/${sProduct.pImages[count]}`}
+                src={`${apiURL}/uploads/products/${sProduct.pImages[count]}`}
                 alt="Pic"
               />
               <div className="absolute inset-0 flex justify-between items-center mb-4">

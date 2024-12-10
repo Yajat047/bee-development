@@ -3,7 +3,7 @@ import moment from "moment";
 import { fetchOrderByUser } from "./Action";
 import Layout, { DashboardUserContext } from "./Layout";
 
-const apiURL = "https://bee-development-production.up.railway.app";
+const apiURL = process.env.REACT_APP_API_URL;
 
 const TableHeader = () => {
   return (
@@ -34,7 +34,7 @@ const TableBody = ({ order }) => {
               <span className="block flex items-center space-x-2" key={i}>
                 <img
                   className="w-8 h-8 object-cover object-center"
-                  src={`uploads/products/${product.id.pImages[0]}`}
+                  src={`${apiURL}/uploads/products/${product.id.pImages[0]}`}
                   alt="productImage"
                 />
                 <span>{product.id.pName}</span>

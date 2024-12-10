@@ -4,7 +4,7 @@ import { HomeContext } from "./";
 import { sliderImages } from "../../admin/dashboardAdmin/Action";
 import { prevSlide, nextSlide } from "./Mixins";
 
-const apiURL = "https://bee-development-production.up.railway.app";
+const apiURL = process.env.REACT_APP_API_URL;
 
 const Slider = (props) => {
   const { data, dispatch } = useContext(HomeContext);
@@ -21,7 +21,7 @@ const Slider = (props) => {
         {data.sliderImages.length > 0 ? (
           <img
             className="w-full"
-            src={`uploads/customize/${data.sliderImages[slide].slideImage}`}
+            src={`${apiURL}/uploads/customize/${data.sliderImages[slide].slideImage}`}
             alt="sliderImage"
           />
         ) : (
